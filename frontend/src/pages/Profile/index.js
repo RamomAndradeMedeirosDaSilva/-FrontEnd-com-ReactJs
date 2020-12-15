@@ -16,7 +16,11 @@ export default function Profile() {
                 <input name="idade" />
                 <strong>Empresa:</strong>
                 <input name="empresa" />
-                <button className="button" type="subimit">Salvar</button>
+
+                <div className="actions">
+                    <button className="button" type="subimit">Voltar</button>
+                    <button className="button" type="subimit">Salvar</button>
+                </div>
             </form>
         </div>
     );
