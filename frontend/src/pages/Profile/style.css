@@ -1,7 +1,14 @@
 #profile-container{
-    max-width: 700px;
+    /* max-width: 700px; comentei isso pra da certo o id centralizaTudo*/
     margin: 20px auto, 0;
-    padding: 0 20px
+    padding: 0 20px;
+}
+
+#centralizaTudo{ /*id foi colocado por mim, Ramom. observei que na tela cheia ficava bugado*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #profile-container h1{
@@ -10,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 #profile-container form input{
