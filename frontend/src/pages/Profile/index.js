@@ -14,7 +14,8 @@ export default function Profile() {
         name: '',
         email: '',
         idade: 0,
-        emapresa: ''
+        empresa: '',
+        created_at: ''
     }
     const [user, setUser] = useState(initUser);
 
@@ -29,7 +30,7 @@ export default function Profile() {
 
     function onSubmit(ev) {
         ev.preventDefault();
-
+        user.created_at = Date();
         const method = id ? 'put' : 'post';
         const url = id ? `/users/${id}` : `/users`;
 
