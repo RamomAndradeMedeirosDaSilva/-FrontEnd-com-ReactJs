@@ -41,6 +41,8 @@ export default function User() {
                         <p>{user.idade}</p>
                         <strong>Empresa</strong>
                         <p>{user.empresa}</p>
+                        <strong>Data e hora</strong>
+                        <p>{user.hora}</p>
                         <div className="actions">
                             <button className="button" onClick={()=>handleDelete(user.id)} type="button">Deletar</button>
                             <Link className="button" to={`/update/${user.id}`}>Acessar</Link>
